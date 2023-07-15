@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
-/*
- * main - A C program that prints a line to the standard error
+/**
+ * main - is the main function
  *
  * Return: 1 (Success)
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 2);
 	return (1);
 }
