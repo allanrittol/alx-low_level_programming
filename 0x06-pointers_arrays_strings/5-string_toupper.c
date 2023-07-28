@@ -2,12 +2,11 @@
 
 /**
  * string_toupper - function that changes lowercase letters to upper case
- * @n: pointer
- * @char: pointer
+ * @n: pointers
  * Return: n
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int i;
 
