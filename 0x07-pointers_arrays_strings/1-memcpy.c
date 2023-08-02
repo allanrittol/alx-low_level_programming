@@ -5,7 +5,7 @@
  * @src: mem1
  * @dest: mem2
  * @n: number of bytes to copy
- * Returns: dest
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
