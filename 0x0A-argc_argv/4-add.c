@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - prints the sum of positive numbers followed by a new line
@@ -10,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, total = 0;
+	int i, j;
+	int total = 0;
 
 	if (argc <= 1)
 	{
@@ -18,11 +20,11 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (int j = 0; arg[i][j] != '0\'; j++)
+		for (j = 0; argv[i][j] != '0'; j++)
 		{
-			for (!isdigit(argv[i][j]))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
