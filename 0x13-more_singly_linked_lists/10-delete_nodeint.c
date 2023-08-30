@@ -40,7 +40,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 }
 
 /**
- * list_len - prints number of nodes.
+ * listint_len - prints number of nodes.
  * @h: value of list
  *
  * Return: any data type list
