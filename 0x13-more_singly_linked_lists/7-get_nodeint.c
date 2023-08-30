@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - returns the number of elements in a linked list
+ * get_nodeint_at_index - returns the number of elements
+ * in a linked list
  * @head: pointer to a pionter of the address
  * @index: index contains the return value
  * Returns: int the nth node if it exist if not returns NULL
