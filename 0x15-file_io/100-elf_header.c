@@ -22,8 +22,3 @@ void check_elf(unsigned char *e_indentity)
 		}
 	}
 }
-int main(void)
-{
-
-	return (0);
-}
