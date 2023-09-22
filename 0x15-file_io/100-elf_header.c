@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <elf.h>
 /**
 * main - main
 * Return: always 0
