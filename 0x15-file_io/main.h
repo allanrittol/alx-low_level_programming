@@ -25,7 +25,7 @@ void print_version(unsigned char *e_identity);
 void print_abi(unsigned char *e_identity);
 void print_osabi(unsigned char *e_identity);
 void print_type(unsigned int e_type, unsigned char *e_identity);
-void print_entry(unsigned long int entry, unsinged char *e_identity);
+void print_entry(unsigned long int entry, unsigned char *e_identity);
 void close_elf(int elf);
 
 #endif
