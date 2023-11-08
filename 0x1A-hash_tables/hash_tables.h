@@ -16,10 +16,8 @@ typedef struct shash_node_s
 {
 	char *key;
 	char *value;
-	struct shash_node_s *next;
-	struct shash_node_s *sprev;
-	struct shash_node_s *snext;
-} shash_node_t;
+	struct hash_node_s *next;
+} hash_node_t;
 /**
  * struct hash_table_s - sorted hash table data structure
  *
@@ -32,9 +30,9 @@ typedef struct shash_node_s
 typedef struct hash_table_s
 {
 	unsigned long int size;
-	hashtable_node_t **array;
-	hashtable_node_t *shead;
-	hashtable_node_t *stail;
+	hash_node_t **array;
+	hash_node_t *shead;
+	hash_node_t *stail;
 } hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
