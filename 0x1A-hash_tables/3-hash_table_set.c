@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			bucket->value = valuecopy;
 			return (1);
 		}
-		bucket = bucket->next;
+		bucket = (hash_node_t *)bucket->next;
 	}
 	new_node = calloc(1, sizeof(hash_node_t));
 	if (new_node == NULL)
@@ -45,7 +45,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new_node->key = keycopy;
 	new_node->value = valuecopy;
-	new_node->next = ht->array[index];
+	new_node->next = (struct hash_node_s *)ht->array[index];
 	ht->array[index] = new_node;
 	return (1);
 }
